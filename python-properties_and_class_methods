@@ -1,4 +1,7 @@
 
+static method-
+
+example-
 ```python
 class MathUtils:
     @staticmethod
@@ -8,3 +11,39 @@ class MathUtils:
 # Usage
 result = MathUtils.add(5, 3)
 print("Sum:", result)  # Output: Sum: 8
+
+
+- It doesn’t need access to self or cls.
+- It’s just a helper function that logically belongs in the class.
+
+
+
+
+class method-
+
+example-
+ ```python
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+
+    @classmethod
+    def from_string(cls, book_str):
+        title, author = book_str.split("-")
+        return cls(title.strip(), author.strip())
+
+# Usage
+book = Book.from_string("1984 - George Orwell")
+print(book.title)   # Output: 1984
+print(book.author)  # Output: George Orwell
+
+
+- It’s often used as an alternative constructor.
+- It has access to the class (cls) so it can create or modify class-level data.
+
+
+
+
+
+
