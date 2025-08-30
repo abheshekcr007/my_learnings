@@ -3,10 +3,10 @@ static method-
 
 example-
 ```python
-class MathUtils:
-    @staticmethod
-    def add(x, y):
-        return x + y
+    class MathUtils:
+        @staticmethod
+        def add(x, y):
+            return x + y
 
 # Usage
 result = MathUtils.add(5, 3)
