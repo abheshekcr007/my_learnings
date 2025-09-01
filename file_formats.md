@@ -82,11 +82,48 @@ was mainly designed for faster reads so no schema evolution.
 -still doesnt support schema evolution
 
 **Parquet file format-**  
--it is a columnar file format similar to rc and orc.  
--faster reads with solw writes  
--supports compression mostly with snappy algorithm  
--parquet files are conditionally splittable  
--limited schema evolution (new fields can only be added to existing fields and old fields can never be deleted.
+
+##converting a pandas dataframe to parquet 
+```python
+import pandas as pd
+import pyarrow.parquet as pq
+
+# Sample DataFrame
+data = {
+    "Product_ID": [101, 102, 103, 104],
+    "Product_Name": ["Laptop", "Smartphone", "Headphones", "Monitor"],
+    "Category": ["Electronics", "Electronics", "Audio", "Electronics"],
+    "Price": [1200.00, 800.00, 150.00, 300.00]
+}
+df = pd.DataFrame(data)
+
+# Write to Parquet file
+df.to_parquet("products.parquet", engine="pyarrow", index=False)
+print("Parquet file 'products.parquet' created successfully.")
+```
+
+##reading a parquet file
+```python
+import pandas as pd
+
+# Read the Parquet file
+df_read = pd.read_parquet("products.parquet")
+print("\nContents of 'products.parquet':")
+print(df_read)
+```
+
+##advantages of parquet file format-  
+Columnar Storage:  
+Unlike row-based formats, Parquet stores data column by column. This means that when a query only needs specific columns, only those columns are read from disk, significantly reducing I/O operations and improving query performance.  
+
+Efficient Compression:
+Storing data of the same type together in columns allows for highly efficient compression techniques (e.g., run-length encoding, dictionary encoding, various codecs like Snappy, Gzip). This leads to smaller file sizes, reduced storage costs, and faster data transfer.  
+
+Optimized for Analytical Queries:
+The columnar nature and efficient compression make Parquet ideal for analytical workloads where queries often involve aggregating or filtering data based on specific columns across large datasets.  
+
+Schema Evolution:
+Parquet files are self-describing, including schema information within the file. This supports schema evolution, allowing for additions or changes to the schema without requiring a complete re-export or reprocessing of existing data.
 
 
 
