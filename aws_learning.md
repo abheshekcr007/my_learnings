@@ -1,4 +1,4 @@
-** AWS Kinesis**  
+**AWS Kinesis**  
 
 in short it can be said as stream analytics  
 suppose assume there is an e-commerce website..and customers visit this site and perform variety of operations..  
