@@ -56,6 +56,15 @@ but we dont really want to have a fresh commit for this ..then we can amend this
 and the head pointer moves to the adjacently created new version of this commit  
 and the older commit will go away with garbage collector  
 
+git rebase -i origin/master
+interactive history rebase
+
+git reflog  
+this will give the logs for all the commit,rebase etc that we have performed in the system  
+
+cases when meddling with history becomes necessary  
+<img width="670" height="300" alt="image" src="https://github.com/user-attachments/assets/8757687d-6afb-4c18-92ab-95abd5cd37a9" />
+
 
 
 
