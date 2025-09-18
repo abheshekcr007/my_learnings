@@ -21,11 +21,20 @@ to transform this data there will be tools ..
 
 so end to end need to be aware of ..how to get this data..  
 how to appropriately store it ..  
-and how to tranform it in a way that could be consumed by thr down stream teams for machine learning and analytics purposes..
+and how to tranform it in a way that could be consumed by thr down stream teams for machine learning and analytics purposes..  this is the customer need ..
+you need to prepare in such a way to efficiently solve this customer need..  
+
+to orchestrate and stuff ..python is need ..
+to transform this data ..both python and sql are really useful ..
+data tranformer,data orchestrator,data warehouse ,distributed batch and stream processing are these can be found in any one cloud so 1 cloud knowledge is important  
+this is primary ..if you can achieve this..then really good 
+
 
 
 
 git history
 we can use git head~2  git head^2  git head {1 month ago }  to know the parents of present commits  
-git head {1 month ago} tells me where the head was 1 month commit ..to which commit it was pointing to .  
+git head {1 month ago} tells me where the head was 1 month commit ..to which commit it was pointing to.  
+
+
 
