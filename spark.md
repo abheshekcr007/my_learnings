@@ -48,6 +48,19 @@ this can give us a whole host of information about history
 <img width="337" height="238" alt="image" src="https://github.com/user-attachments/assets/a6296894-9ba1-45b8-9dc0-b57b3348bf6b" />
 
 
+<img width="530" height="144" alt="image" src="https://github.com/user-attachments/assets/1f5c75e5-5d0b-4656-90b8-44a0b599ce87" />
+
+**git commit --amend**  
+what this does is ..if we had commited earlier with some changes..and we have a new change ..  
+but we dont really want to have a fresh commit for this ..then we can amend this change to the earlier commit  
+and the head pointer moves to the adjacently created new version of this commit  
+and the older commit will go away with garbage collector  
+
+
+
+
+
+
 
 
 
