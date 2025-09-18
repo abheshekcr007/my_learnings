@@ -36,5 +36,18 @@ git history
 we can use git head~2  git head^2  git head {1 month ago }  to know the parents of present commits  
 git head {1 month ago} tells me where the head was 1 month commit ..to which commit it was pointing to.  
 
+git blame file_name  
+this can give us the changes that happened in that particular file  
+
+git diff head head^2  
+this can give the difference between these 2 commits  
+
+git log   
+this can give us a whole host of information about history  
+
+<img width="337" height="238" alt="image" src="https://github.com/user-attachments/assets/a6296894-9ba1-45b8-9dc0-b57b3348bf6b" />
+
+
+
 
 
