@@ -70,8 +70,22 @@ git add .  - this adds our code to index
 git commit -m "our message" - this adds our code to remote repo  
 git push branch_name  
 
+<img width="661" height="286" alt="image" src="https://github.com/user-attachments/assets/6a9564c5-712c-4d8e-8c3d-7c4218a2a27a" />
+
+
 distribution models  
 <img width="603" height="210" alt="image" src="https://github.com/user-attachments/assets/c10233ee-0adb-4761-98b1-e1e3aabad1a7" />  
+
+branches-  
+stable branch-the tip of the branch is working  
+unstable branch-the tip of the branch maybe working or not working  
+
+<img width="563" height="254" alt="image" src="https://github.com/user-attachments/assets/8241f034-d1d9-4b5f-b689-f9edd924a06e" />  
+
+
+
+
+
 
 
 
