@@ -68,7 +68,17 @@ cases when meddling with history becomes necessary
 how to add our code from local to remote repo-  
 git add .  - this adds our code to index  
 git commit -m "our message" - this adds our code to remote repo  
-git push branch_name 
+git push branch_name  
+
+distribution models  
+<img width="603" height="210" alt="image" src="https://github.com/user-attachments/assets/c10233ee-0adb-4761-98b1-e1e3aabad1a7" />  
+
+
+
+
+
+
+
 
 
 
