@@ -65,6 +65,11 @@ this will give the logs for all the commit,rebase etc that we have performed in 
 cases when meddling with history becomes necessary  
 <img width="670" height="300" alt="image" src="https://github.com/user-attachments/assets/8757687d-6afb-4c18-92ab-95abd5cd37a9" />
 
+how to add our code from local to remote repo-
+git add .  - this adds our code to index
+git commit -m "our message" - this adds our code to remote repo  
+git push branch_name 
+
 
 
 
