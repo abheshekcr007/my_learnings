@@ -92,6 +92,16 @@ its a good blueprint kind of thing to develop but shouldnt be followed blindly..
 
 <img width="639" height="325" alt="image" src="https://github.com/user-attachments/assets/478844c0-d410-456d-ad6c-df60d4c6ccac" />  
 
+the four areas-  
+<img width="712" height="293" alt="image" src="https://github.com/user-attachments/assets/f15af3b4-a230-4085-8ffd-ff758074cdbc" />  
+
+<img width="643" height="306" alt="image" src="https://github.com/user-attachments/assets/41dd79da-becb-4c6f-9cea-f999afaa6aaf" />  
+
+
+
+
+
+
 
 
 
