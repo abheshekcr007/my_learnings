@@ -1,18 +1,29 @@
 spark context and spark session 
 
-spark context is used for dealing with rdds.
+spark context is used for dealing with rdds.  
 it was introduced and used in spark 1.X 
 
-<md>
+```
 from pyspark import SparkContext
 
 sc = SparkContext(appName="MyApp")
 rdd = sc.parallelize([1, 2, 3, 4])
 print(rdd.sum())
-</md>
+```
+
+spark session is used for dealing with higher level apis like dataframes,datasets etc  
+it was introduced and used from spark 2.X  
+spark session has sqlcontext,hivecontext,and sparkcontext  
 
 
+```
+from pyspark.sql import SparkSession
 
-spark session is used for dealing with higher level apis like dataframes,datasets etc
-it was introduced and used from spark 2.X
+spark = SparkSession.builder \
+    .appName("MyApp") \
+    .getOrCreate()
+
+df = spark.createDataFrame([(1, "A"), (2, "B")], ["id", "value"])
+df.show()
+```
 
