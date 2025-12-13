@@ -3,13 +3,13 @@ spark context and spark session
 spark context is used for dealing with rdds.
 it was introduced and used in spark 1.X 
 
-<code>
+<md>
 from pyspark import SparkContext
 
 sc = SparkContext(appName="MyApp")
 rdd = sc.parallelize([1, 2, 3, 4])
 print(rdd.sum())
-<code>
+</md>
 
 
 
