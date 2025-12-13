@@ -9,6 +9,8 @@ from pyspark import SparkContext
 sc = SparkContext(appName="MyApp")
 rdd = sc.parallelize([1, 2, 3, 4])
 print(rdd.sum())
+<code>
+
 
 
 spark session is used for dealing with higher level apis like dataframes,datasets etc
