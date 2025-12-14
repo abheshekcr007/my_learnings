@@ -17,7 +17,7 @@ distributed compute through spark ..batch and stream processing
 
 so what are the skills we need to be good at  
 1.sql,python,pyspark  
-2.cloud(orachestation,warehousing,transformation,devops)  
+2.cloud(orchestation,warehousing,transformation,devops)  
 3.distributed compute concepts
 
 
