@@ -15,7 +15,7 @@ sql,python skills ..scripts to bring in data can be achieved only through this
 data warehousing skill..this big data need to be stored in ordered tables somewhere ..
 distributed compute through spark ..batch and stream processing  
 
-so what are the skills we need to be good at
+so what are the skills we need to be good at  
 1.sql,python,pyspark  
 2.cloud(orachestation,warehousing,transformation,devops)  
 3.distributed compute concepts
