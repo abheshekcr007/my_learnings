@@ -21,7 +21,7 @@ so what are the skills we need to be good at
 3.distributed compute concepts  
 
 
-1.why spark is faster than mapreduce??  
+<b>1.why spark is faster than mapreduce??  </b>
 In-memory computation  
 Less disk I/O  
 DAG-based optimization  
@@ -39,6 +39,13 @@ val result = text
 
 result.collect()
 ```
+
+What happens:
+Data is loaded once  
+Intermediate results stay in memory  
+Spark builds a DAG and optimizes execution  
+Only final output is written to disk (if needed)  
+No repeated disk reads/writes  
 
 
 
