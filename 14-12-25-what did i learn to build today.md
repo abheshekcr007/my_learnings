@@ -18,7 +18,30 @@ distributed compute through spark ..batch and stream processing
 so what are the skills we need to be good at  
 1.sql,python,pyspark  
 2.cloud(orchestation,warehousing,transformation,devops)  
-3.distributed compute concepts
+3.distributed compute concepts  
+
+
+1.why spark is faster than mapreduce??  
+In-memory computation  
+Less disk I/O  
+DAG-based optimization  
+Faster iterative and interactive workloads  
+Lazy evaluation and caching  
+
+```
+val text = spark.read.textFile("hdfs://file")
+val result = text
+  .flatMap(line => line.split(" "))
+  .map(word => (word, 1))
+  .reduceByKey(_ + _)
+  .filter(_._2 > 10)
+  .sortBy(_._2, ascending = false)
+
+result.collect()
+```
+
+
+
 
 
 
