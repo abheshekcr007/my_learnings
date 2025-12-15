@@ -1,1 +1,45 @@
+1.Generators in python  
+
+You have a 10–50 GB application log file on a server.  
+You need to scan it for errors and send alerts — without crashing the system or using too much memory.  
+
+```
+def read_logs(file_path):
+    return open(file_path).readlines()  # loads entire file into memory
+```
+
+Problems  
+Tries to load GBs of data into RAM  
+Slow startup  
+Can cause OOM (Out Of Memory) errors  
+
+```
+def stream_logs(file_path):
+    with open(file_path) as file:
+        for line in file:
+            yield line
+```
+
+Reads one log line at a time  
+✔ Memory usage stays constant  
+✔ Perfect for real-time or near-real-time processing  
+
+```
+def find_errors(log_stream):
+    for log in log_stream:
+        if "ERROR" in log:
+            yield log
+```
+
+```
+for error_log in find_errors(stream_logs("app.log")):
+    print("ALERT:", error_log)
+```
+
+stream_logs() reads one line from disk  
+find_errors() checks it  
+If it’s an error, it’s immediately processed  
+Memory usage stays low, no matter how large the file is  
+
+
 
