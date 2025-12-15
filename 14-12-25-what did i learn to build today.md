@@ -21,7 +21,7 @@ so what are the skills we need to be good at
 3.distributed compute concepts  
 
 
-<b>1.why spark is faster than mapreduce??  </b>
+<b>1.why spark is faster than mapreduce??  </b>  
 In-memory computation  
 Less disk I/O  
 DAG-based optimization  
