@@ -56,7 +56,22 @@ Inputs are guaranteed to be a single string
             return False    
     return True
 ```
-    
+
+3.Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24  
+
+```
+from functools import reduce
+
+def grow(arr):
+    val = reduce(lambda x,y:x*y,arr)
+    return val
+```
+
+
+
+
         
     
     
