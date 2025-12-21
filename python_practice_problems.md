@@ -26,7 +26,36 @@ def clean_string(s):
     return ''.join(result)
   ```      
         
-        
+2.valid ip or not   
+
+Examples of valid inputs:  
+1.2.3.4  
+123.45.67.89  
+Invalid input examples:  
+1.2.3  
+1.2.3.4.5  
+123.456.78.90  
+123.045.067.089  
+Notes:  
+Leading zeros (e.g. 01.02.03.04) are considered invalid  
+Inputs are guaranteed to be a single string  
+
+```
+   def is_valid_IP(strng):
+    elem=strng.split(".")
+    if len(elem) !=4:
+        return False
+    
+    for i in elem:
+        if not i.isdigit():
+            return False
+        j=int(i)
+        if j<0 or j>255:
+            return False
+        if len(i)>1 and i[0]=="0":
+            return False    
+    return True
+```
     
         
     
