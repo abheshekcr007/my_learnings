@@ -69,6 +69,44 @@ def grow(arr):
     return val
 ```
 
+4.student A comes opens all the doors 
+Student 2 comes opens all the 2nd,4th,6th doors and so on   
+Student 3 comes opens all the 3rd,6th,9th doors and so on  
+there are N doors and N number of students  
+
+this was my solution ..but gets timed out for larger numbers  
+
+```
+def doors(n):
+    pass
+#if a door is toggled odd number of times it remains open
+#if its toggled even number of times ..it remains closed
+
+    dict={}
+    counter=0
+    for i in range(1,n+1):
+        count=1
+        for j in range(1,i):
+            if i%j ==0:
+                count+=1
+        dict[i]=count
+
+    for key,value in dict.items():
+        if value %2 !=0:
+            counter+=1
+    return counter
+```
+
+efficient solution-  
+
+import math
+
+```
+def doors(n):
+    limit =math.isqrt(n)
+    return limit
+    pass
+```
 
 
 
