@@ -108,6 +108,27 @@ def doors(n):
     pass
 ```
 
+5.You need to implement a function that validates a given Spanish DNI number. The function should return true/True if the DNI is valid and false/False otherwise.
+
+DNI Format
+A valid Spanish DNI follows this structure:
+
+8 digits followed by 1 letter.
+Example: 12345678A.
+The letter is calculated based on the 8-digit number. The algorithm is as follows:
+
+Divide the 8-digit number by 23.
+The remainder of the division will correspond to a specific letter.
+The correspondence between the remainder and the letter is fixed and follows a specific order.  
+
+```
+text,num_slice='TRWAGMYFPDXBNJZSQVHLCKE',s[:-1]
+    if num_slice.isdigit() and text[int(num_slice)%23]==s[-1]:
+        return True
+    else:
+        return False
+```
+
 
 
         
