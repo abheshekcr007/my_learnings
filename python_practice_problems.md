@@ -129,6 +129,37 @@ text,num_slice='TRWAGMYFPDXBNJZSQVHLCKE',s[:-1]
         return False
 ```
 
+6.Examples:
+
+preferred	blacklisted	options	expected result
+attack, defense	luck	(luck,25)→A
+(speed,20)→B
+(defense,15)→C	Should pick C: defense (the only preferred option available).
+attack	luck, speed, defense	(luck,30)→A
+(speed,20)→B
+(defense,15)→C	Should return D: all options (A, B, C) are blacklisted, so fall back to D.
+attack	luck	(luck,30)→A
+(speed,20)→B
+(defense,15)→C	Should pick B: speed (neutral) with the highest value among neutral skills.
+attack, defense	luck	(attack,20)→A
+(defense,20)→B
+(speed,10)→C	Should pick A or B: both attack and defense are preferred and tied on value, so either A or B is acceptable.  
+
+```
+values=["A","B","C"]
+    
+    val = [(i[1],options.index(i)) for i in options if i[0] in preferred]
+    val2=[(i[1],options.index(i)) for i in options if i[0] not in blacklisted]
+    if val:
+        highest=max(val,key=lambda x:x[0])
+        return values[highest[1]]
+    elif val2:
+        highest=max(val2,key=lambda x:x[0])
+        return values[highest[1]]
+    else:
+        return 'D'
+```
+
 
 
         
