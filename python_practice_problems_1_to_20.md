@@ -239,6 +239,17 @@ def mine_location(field):
         return i
 ```
 
+12.the length of each word does not exceed the amount of words in the string  
+
+```
+def is_kiss(words):
+    val = [len(i) for i in words.split(' ')]
+    if max(val)>len(val):
+        return "Keep It Simple Stupid"
+    else:
+        return "Good work Joe!"
+```
+
 
 
         
