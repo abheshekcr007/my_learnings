@@ -223,6 +223,22 @@ def high_and_low(numbers):
     return f"{max(list)} {min(list)}"
 ```
 
+11.find the mine  
+
+[ [1, 0, 0], [0, 0, 0], [0, 0, 0] ] --> [0, 0]  
+
+[ [0, 0, 0], [0, 1, 0], [0, 0, 0] ] --> [1, 1]  
+
+[ [0, 0, 0], [0, 0, 0], [0, 1, 0] ] --> [2, 1]  
+
+
+```
+def mine_location(field):
+    arr = [[field.index(i),i.index(j)] for i in field for j in i if j ==1]
+    for i in arr:
+        return i
+```
+
 
 
         
