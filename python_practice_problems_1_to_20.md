@@ -192,6 +192,25 @@ def rps(p1, p2):
         return "Player 2 won!"
 ```
 
+9.sushi problem  
+
+"rr"           -->  4     # 2 plates
+"rr rrr"       -->  8     # 5 plates, 1 free
+"rrrrr rrrrr"  -->  16    # 10 plates, 2 free  
+
+```
+def total_bill(s):
+    # Code here
+    print(s)
+    arr = [i for i in s if i == 'r']
+    print(arr)
+    val = len(arr)/5
+    val2=round(len(arr)//5)
+    print(val)
+    print(val2)
+    return (len(arr)-val2)*2
+```
+
 
 
         
