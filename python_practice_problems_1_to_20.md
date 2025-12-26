@@ -211,6 +211,18 @@ def total_bill(s):
     return (len(arr)-val2)*2
 ```
 
+10.
+high_and_low("1 2 3 4 5") # return "5 1"
+high_and_low("1 2 -3 4 5") # return "5 -3"
+high_and_low("1 9 3 4 -5") # return "9 -5"
+
+```
+def high_and_low(numbers):
+    # ...
+    list = [int(i.strip()) for i in numbers.split(' ') if i.strip() !=""]
+    return f"{max(list)} {min(list)}"
+```
+
 
 
         
