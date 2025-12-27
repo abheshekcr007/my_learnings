@@ -267,6 +267,19 @@ def sum_mul(n, m):
         return 'INVALID'
 ```
 
+14.ascending or descending  
+
+```
+def is_sorted_and_how(arr):
+    # your code here
+    if all(arr[i]>arr[i+1] for i in range(len(arr)-1)):
+        return 'yes, descending'
+    elif all(arr[i]<arr[i+1] for i in range(len(arr)-1)):
+        return 'yes, ascending'
+    else:
+        return 'no'
+```
+
 
 
         
