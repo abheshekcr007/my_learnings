@@ -280,6 +280,19 @@ def is_sorted_and_how(arr):
         return 'no'
 ```
 
+15.You are given an array with several "even" words, one "odd" word, and some numbers mixed in.
+
+Determine if any of the numbers in the array is the index of the "odd" word. If so, return true, otherwise false.  
+
+```
+def odd_ball(arr):
+    list = [arr.index(i) for i in arr if i =='odd']
+    if list[0] in arr:
+        return True
+    else:
+        return False
+```
+
 
 
         
