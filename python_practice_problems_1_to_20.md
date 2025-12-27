@@ -292,6 +292,13 @@ def odd_ball(arr):
     else:
         return False
 ```
+16.palindrome  
+
+```
+def is_palindrome(s):
+    val=s.lower()
+    return val==val[::-1]
+```
 
 
 
