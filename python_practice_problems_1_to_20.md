@@ -325,6 +325,17 @@ def sort_list(sort_by, lst):
     return sorted(lst,key=lambda x:x[sort_by],reverse=True)
 ```
 
+18.most digits  
+
+```
+def find_longest(arr):
+    #your code here
+    val=[(len(str(i)),i) for i in arr]
+    val2=max(val,key=lambda x:x[0])
+    return val2[1]
+    pass
+```
+
 
 
         
