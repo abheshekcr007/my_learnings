@@ -355,6 +355,21 @@ def find_it(seq):
     return val[0]
 ```
 
+20.reverse fibonacci series  
+
+```
+def solution(first, second):
+    list=[]
+    list.append(first)
+    list.append(second)
+    
+    while list[0]>=0:
+        val=list[1]-list[0]
+        list.insert(0,val)
+    print(list)
+    return (list[2],list[3])
+```
+
 
 
         
