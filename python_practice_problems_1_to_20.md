@@ -357,6 +357,10 @@ def find_it(seq):
 
 20.reverse fibonacci series  
 
+Your challenge is, given two numbers in a Fibonacci-like sequence (where the next number is found by adding the two previous numbers), to find the lowest possible non-negative numbers that the sequence originates from. For example, if you are given the numbers 398 and 644, which come from this sequence: 2, 6, 8, 14, 22, 36, 58, 94, 152, 246, 398, 644
+
+Then you would return 2 and 6, as they are the numbers which started the sequence.
+
 ```
 def solution(first, second):
     list=[]
